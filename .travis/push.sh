@@ -7,7 +7,9 @@ if [ $TRAVIS_BRANCH == 'master' ] ; then
   git config --global user.name "Travis CI"
 
   git checkout -b test
-  touch file.txt
+  
+  Rscript -e "covrpage::covrpage(pkg = '.', preview = FALSE)"
+  
   git add .
   git commit --message "Travis build: $TRAVIS_BUILD_NUMBER [skip ci]"
 

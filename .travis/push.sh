@@ -11,7 +11,7 @@ if [ $TRAVIS_BRANCH == 'master' ] ; then
   git add .
   git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
 
-  git remote add deploy https://yonicd:${GH_PAT}@github.com/yonicd/rtravis.git
+  git remote add deploy https://yonicd:${GITHUB_PAT}@github.com/yonicd/rtravis.git
   git push --force deploy test -v
 
 else

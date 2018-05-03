@@ -1,4 +1,0 @@
-covr_summary            Summary outputs for covr object
-covrpage                render covrpage
-covrpage_snapshot       Create covrpages for pacakges on Github
-testthat_summary        Summary outputs for testthat object

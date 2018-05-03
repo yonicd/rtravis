@@ -4,12 +4,7 @@
 \alias{func}
 \title{FUNCTION_TITLE}
 \usage{
-func(x, y)
-}
-\arguments{
-\item{x}{PARAM_DESCRIPTION}
-
-\item{y}{PARAM_DESCRIPTION}
+func()
 }
 \value{
 OUTPUT_DESCRIPTION

@@ -16,6 +16,8 @@ if [ $TRAVIS_BRANCH == 'master' ] ; then
   git remote add deploy https://yonicd:${GITHUB_PAT}@github.com/yonicd/rtravis.git
   git push deploy test -v
 
+  git checkout master
+  
 else
     echo "Not deploying, since this branch isn't master."
 fi

@@ -2,6 +2,8 @@ print(getwd())
 
 row.names(installed.packages())
 
-devtools::build()
+devtools::install()
+
+library(rtravis)
 
 rtravis::func()

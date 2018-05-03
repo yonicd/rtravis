@@ -14,7 +14,7 @@ if [ $TRAVIS_BRANCH == 'master' ] ; then
   git commit --message "Travis build: $TRAVIS_BUILD_NUMBER [skip ci]"
 
   git remote add deploy https://yonicd:${GITHUB_PAT}@github.com/yonicd/rtravis.git
-  git push --force deploy test -v
+  git push deploy test -v
 
 else
     echo "Not deploying, since this branch isn't master."

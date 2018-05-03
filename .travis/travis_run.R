@@ -1,4 +1,2 @@
-install.packages(c('testthat','covr'))
-devtools::install_github('yonicd/covrpage')
+.libPaths('.travis/lib')
 covrpage::covrpage(pkg = '.', preview = FALSE)
-

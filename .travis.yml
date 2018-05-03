@@ -2,7 +2,8 @@ language: R
 sudo: false
 cache: packages
 after_success:
-- Rscript -e 'covr::codecov()'
+  - Rscript -e 'covr::codecov()'
+  - bash .travis/push.sh
 env:
   global:
     secure: SmQpCFNb2JivcsB8Faqpmkr7z42oYXOMPUtlI5+vzxpc2jeGHxSKGex18A7UkNqV4eFuLiP+75bUu7KGZxKkTmhYOsJyZ+A0yRjUe7WEnQXGLcyV9EICxtTf9NqJJhBrAtc0kD9gzMamw3VaVPWyNFd8JuDRaesf/0E8kANnh2ZnEYmabwKWtJzJT6POW9SEgrFQnJLJP/jniHw9gFyDtphTqjVgFa+UBpFNrHwQrpKjkUbro9mqaQ7qdf2yoemNzxi7+0GYFiXi0Fwxbep8YsLW2Reo1+nY5428wHVxx4X/eAYyRuEyXARV8r516DbVMVOteTEeN758FT2rNFKS+NLphApu12fsZIUF1fV88cNvBxevOsk6Ck7G3kC7YVhEosh6HX/amo1XDIbAHyDWRB/SV6xWC+BCWdl320QGyxIZHzukMJRzUst8ZeY1qZRJfc7m0iFQrAx8i/jl85m+fWQjGMtMH2VwIJ8m5PLUESI6N++nPjZTMJRws5eUxsPmDloDn1ZgK4LnKzHHC3/Nt2deRVC64qPiUo/DnjwtmwGRqPOsp4XPHi3XFXa8ix2zV02uJ4gF+6lLuzCZ/vVdrndQ2fT2HlOPtWS5+m5MGZEBzwvr7pQz/2H+57LTtb6I6g/l137ZmN85aUH/CQGzNwxvQJXqzRdi1e5sKdGtEAM=

@@ -8,7 +8,7 @@ if [ $TRAVIS_BRANCH == 'master' ] ; then
 
   git checkout -b test
   
-  Rscript -e "covrpage::covrpage(pkg = '.', preview = FALSE)"
+  Rscript .travis/travis_run.R
   
   git add .
   git commit --message "Travis build: $TRAVIS_BUILD_NUMBER [skip ci]"

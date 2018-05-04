@@ -1,7 +1,6 @@
 install.packages('testthat')
-devtools::install_github('yonicd/covrpage')
 
-row.names(installed.packages())
+devtools::install_github('yonicd/covrpage')
 
 devtools::install()
 

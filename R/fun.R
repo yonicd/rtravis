@@ -10,8 +10,8 @@
 #'  #EXAMPLE1
 #'  }
 #' }
-#' @rdname func
+#' @rdname fun
 #' @export 
-func <- function(x,y){
+fun <- function(x,y){
   x+y
 }

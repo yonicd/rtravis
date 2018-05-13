@@ -8,7 +8,7 @@
   
   git checkout -b test
   
-  Rscript .travis/travis_run.R
+  Rscript -e "devtools::install()" -e "library(covrpage)" -e "covrpage::covrpage(pkg = '.',preview = FALSE)"
   
   git add .
   git commit --message "Travis build: $TRAVIS_BUILD_NUMBER [skip ci]"

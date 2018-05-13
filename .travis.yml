@@ -1,10 +1,10 @@
 language: R
-r_github_packages: yonicd/covrpage
 sudo: false
 cache: packages
 after_success:
 - Rscript -e 'covr::codecov()'
-- bash .travis/push.sh
+- bash .travis/covrpage.sh
+r_github_packages: yonicd/covrpage
 env:
   global:
     secure: IeWrPb9tC9oxkoceXs4NStZJFIJKtvi/qeErbv3OATeo+BylRwj9xzcmzQrV8psSCt3uFvPi8EejMpwQ8gLvkh1Zip6DnIZ1vqaZ3IDSbMN/gNOmk8JQvJHBVpdreDq5+vAT6NTSco2BFSXKFQkFLozsgpMS2FiKoeoLkTKjXzdPYIakeT3Qe06sB1n/oXS/KVMXHFNHBRAOhrxwUoxfHB5oQjkICefXsoZQw4LYf8zka0gvJFcxfNe6uWNoQnWwFvLzOBAajqqYdYRVdyR9n1aD8/4MyuSd0CCtcV7Bp85gAaSIi0ClrHGRUmtm0/j5BYcgA9cUMGWCbFyXjSD0PUwT0UMrPA0AQ7WtsOC9q+ibE3dGGdou1ZJTl+vyDxvgB9DfueoMYdyZvPxSVi42qUGOtJJCWaW0MNoY3IjrUepFvInmCBkdz2MRP1tMJrOiai2SI0QUfyu7gcQm5BxJvXtl2yuXmoOwTQSVkCUQBwpNQmP8YxEONauQWWFvYgfYGE2o2fPQzqdOfS7K0b1qKALPu9/ydln1FmyJxx1dnY0OXcnFAotttqAYZngveXUpiv8QseMD0JdqsjwMMdpLxQjLoC4qsVwPryClTMvkyW9zjslB8+4ZsCBM/ZiwrAyiGuKCTQHC7sYHivVx21DDPl4px/k5zwkc0lm6sAzCkSo=

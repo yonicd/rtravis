@@ -1,5 +1,4 @@
 language: R
-r_packages: testthat
 r_github_packages: yonicd/covrpage
 sudo: false
 cache: packages

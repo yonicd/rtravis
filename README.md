@@ -4,7 +4,7 @@
 
 weird roxygen2 bug
 
-  - exported function named `travis_encrypt` is flagged as undocumented code objects
+  - exported function named [travis_encrypt](https://github.com/yonicd/rtravis/blob/master/R/fun.R#L34) is flagged as undocumented code objects
   
 ```
 ==> devtools::check()

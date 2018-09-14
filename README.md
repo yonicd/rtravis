@@ -1,114 +1,50 @@
-[![Travis build status](https://travis-ci.org/yonicd/rtravis.svg?branch=master)](https://travis-ci.org/yonicd/rtravis)
-[![Coverage status](https://codecov.io/gh/yonicd/rtravis/branch/master/graph/badge.svg)](https://codecov.io/github/yonicd/rtravis?branch=master)
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
 # rtravis
 
-weird roxygen2 bug
+<details>
 
-  - exported function named [travis_encrypt](https://github.com/yonicd/rtravis/blob/master/R/fun.R#L34) is flagged as undocumented code objects
-  
+<summary>session info</summary>
+
+``` r
+devtools::session_info()
+#> Session info -------------------------------------------------------------
+#>  setting  value                       
+#>  version  R version 3.5.1 (2018-07-02)
+#>  system   x86_64, darwin15.6.0        
+#>  ui       X11                         
+#>  language (EN)                        
+#>  collate  en_US.UTF-8                 
+#>  tz       America/New_York            
+#>  date     2018-09-13
+#> Packages -----------------------------------------------------------------
+#>  package   * version date       source        
+#>  backports   1.1.2   2017-12-13 CRAN (R 3.5.0)
+#>  base      * 3.5.1   2018-07-05 local         
+#>  compiler    3.5.1   2018-07-05 local         
+#>  datasets  * 3.5.1   2018-07-05 local         
+#>  devtools    1.13.5  2018-02-18 CRAN (R 3.5.0)
+#>  digest      0.6.15  2018-01-28 CRAN (R 3.5.0)
+#>  evaluate    0.11    2018-07-17 CRAN (R 3.5.0)
+#>  graphics  * 3.5.1   2018-07-05 local         
+#>  grDevices * 3.5.1   2018-07-05 local         
+#>  htmltools   0.3.6   2017-04-28 CRAN (R 3.5.0)
+#>  knitr       1.20.15 2018-08-29 local         
+#>  magrittr    1.5     2014-11-22 CRAN (R 3.5.0)
+#>  memoise     1.1.0   2017-04-21 CRAN (R 3.5.0)
+#>  methods   * 3.5.1   2018-07-05 local         
+#>  Rcpp        0.12.18 2018-07-23 CRAN (R 3.5.0)
+#>  rmarkdown   1.10    2018-06-11 CRAN (R 3.5.0)
+#>  rprojroot   1.3-2   2018-01-03 CRAN (R 3.5.0)
+#>  stats     * 3.5.1   2018-07-05 local         
+#>  stringi     1.2.4   2018-07-20 CRAN (R 3.5.0)
+#>  stringr     1.3.1   2018-05-10 CRAN (R 3.5.0)
+#>  tools       3.5.1   2018-07-05 local         
+#>  utils     * 3.5.1   2018-07-05 local         
+#>  withr       2.1.2   2018-03-15 CRAN (R 3.5.0)
+#>  xfun        0.3     2018-07-06 CRAN (R 3.5.0)
+#>  yaml        2.2.0   2018-07-25 CRAN (R 3.5.0)
 ```
-==> devtools::check()
 
-Updating rtravis documentation
-Loading rtravis
-Writing NAMESPACE
-Writing NAMESPACE
-Setting env vars --------------------------------------------------------------
-CFLAGS  : -Wall -pedantic
-CXXFLAGS: -Wall -pedantic
-Building rtravis --------------------------------------------------------------
-'/Library/Frameworks/R.framework/Resources/bin/R' --no-site-file --no-environ  \
-  --no-save --no-restore --quiet CMD build  \
-  '/Users/jonathans/projects/rtravis' --no-resave-data --no-manual 
-
-* checking for file ‘/Users/jonathans/projects/rtravis/DESCRIPTION’ ... OK
-* preparing ‘rtravis’:
-* checking DESCRIPTION meta-information ... OK
-* checking for LF line-endings in source and make files
-* checking for empty or unneeded directories
-Removed empty directory ‘rtravis/data’
-* building ‘rtravis_0.0.0.9000.tar.gz’
-
-Setting env vars --------------------------------------------------------------
-_R_CHECK_CRAN_INCOMING_ : FALSE
-_R_CHECK_FORCE_SUGGESTS_: FALSE
-Checking rtravis --------------------------------------------------------------
-'/Library/Frameworks/R.framework/Resources/bin/R' --no-site-file --no-environ  \
-  --no-save --no-restore --quiet CMD check  \
-  '/var/folders/4_/xhs9__yd49l4v4j4wdg9f0wr0000gp/T//RtmpoHM8TD/rtravis_0.0.0.9000.tar.gz'  \
-  --as-cran --timings --no-manual 
-
-* using log directory ‘/Users/jonathans/projects/rtravis.Rcheck’
-* using R version 3.3.3 (2017-03-06)
-* using platform: x86_64-apple-darwin13.4.0 (64-bit)
-* using session charset: UTF-8
-* using options ‘--no-manual --as-cran’
-* checking for file ‘rtravis/DESCRIPTION’ ... OK
-* this is package ‘rtravis’ version ‘0.0.0.9000’
-* package encoding: UTF-8
-* checking package namespace information ... OK
-* checking package dependencies ... OK
-* checking if this is a source package ... OK
-* checking if there is a namespace ... OK
-* checking for executable files ... OK
-* checking for hidden files and directories ... OK
-* checking for portable file names ... OK
-* checking for sufficient/correct file permissions ... OK
-* checking whether package ‘rtravis’ can be installed ... OK
-* checking installed package size ... OK
-* checking package directory ... OK
-* checking DESCRIPTION meta-information ... OK
-* checking top-level files ... OK
-* checking for left-over files ... OK
-* checking index information ... OK
-* checking package subdirectories ... OK
-* checking R files for non-ASCII characters ... OK
-* checking R files for syntax errors ... OK
-* checking whether the package can be loaded ... OK
-* checking whether the package can be loaded with stated dependencies ... OK
-* checking whether the package can be unloaded cleanly ... OK
-* checking whether the namespace can be loaded with stated dependencies ... OK
-* checking whether the namespace can be unloaded cleanly ... OK
-* checking dependencies in R code ... OK
-* checking S3 generic/method consistency ... OK
-* checking replacement functions ... OK
-* checking foreign function calls ... OK
-* checking R code for possible problems ... OK
-* checking Rd files ... OK
-* checking Rd metadata ... OK
-* checking Rd line widths ... OK
-* checking Rd cross-references ... OK
-* checking for missing documentation entries ... WARNING
-Undocumented code objects:
-  ‘travis_encrypt’
-All user-level objects in a package should have documentation entries.
-See chapter ‘Writing R documentation files’ in the ‘Writing R
-Extensions’ manual.
-* checking for code/documentation mismatches ... OK
-* checking Rd \usage sections ... OK
-* checking Rd contents ... OK
-* checking for unstated dependencies in examples ... OK
-* checking examples ... OK
-* checking for unstated dependencies in ‘tests’ ... OK
-* checking tests ...
-  Running ‘testthat.R’ OK
-* DONE
-Status: 1 WARNING
-
-
-See
-  ‘/Users/jonathans/projects/rtravis.Rcheck/00check.log’
-for details.
-
-
-checking for missing documentation entries ... WARNING
-Undocumented code objects:
-  ‘travis_encrypt’
-All user-level objects in a package should have documentation entries.
-See chapter ‘Writing R documentation files’ in the ‘Writing R
-Extensions’ manual.
-R CMD check results
-0 errors | 1 warning  | 0 notes
-
-R CMD check succeeded
-```
+</details>

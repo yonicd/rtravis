@@ -1,7 +1,22 @@
-Tests and Coverage
-================
-07 October, 2018 08:21:06
+---
+title: "Tests and Coverage"
+date: "`r format(Sys.time(), '%d %B, %Y %H:%M:%S')`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+  
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  eval = FALSE
+)
+```
 
+<!--- Placeholder for tests/README.md Do Not Edit--->
 This output is created by
 [covrpage](https://github.com/yonicd/covrpage).
 
@@ -13,7 +28,7 @@ Coverage summary is created using the
 | Object                | Coverage (%) |
 | :-------------------- | :----------: |
 | rtravis               |      0       |
-| [R/fun.R](../R/fun.R) |      0       |
+| [R/fun.R](https://github.com/yonicd/rtravis/tree/master/R/fun.R) |      0       |
 
 <br>
 
@@ -25,7 +40,7 @@ package.
 
 |              | file                                 | n |  time | error | failed | skipped | warning |
 | ------------ | :----------------------------------- | -: | ----: | ----: | -----: | ------: | ------: |
-| test\_func.R | [test\_func.R](testthat/test_func.R) | 1 | 0.023 |     0 |      0 |       0 |       0 |
+| test\_func.R | [test\_func.R](https://github.com/yonicd/rtravis/tree/master/tests/testthat/test_func.R) | 1 | 0.023 |     0 |      0 |       0 |       0 |
 
 <details closed>
 
@@ -34,7 +49,7 @@ package.
 
 | file                                     | context | test   | status | n |  time |
 | :--------------------------------------- | :------ | :----- | :----- | -: | ----: |
-| [test\_func.R](testthat/test_func.R#L12) | test    | a test | PASS   | 1 | 0.023 |
+| [test\_func.R](https://github.com/yonicd/rtravis/tree/master/tests/testthat/test_func.R#L12) | test    | a test | PASS   | 1 | 0.023 |
 
 </details>
 

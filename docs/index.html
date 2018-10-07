@@ -44,6 +44,18 @@
 <li>
   <a href="reference/index.html">Reference</a>
 </li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Articles
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+<li>
+      <a href="articles/tests_and_coverage.html">Tests and Coverage</a>
+    </li>
+  </ul>
+</li>
       </ul>
 <ul class="nav navbar-nav navbar-right"></ul>
 </div>
@@ -64,56 +76,301 @@
 <div id="rtravis" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#rtravis" class="anchor"></a>rtravis</h1></div>
-<details><p><summary>session info</summary></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/session_info">session_info</a></span>()</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="co">#&gt; Session info -------------------------------------------------------------</span></a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="co">#&gt;  setting  value                       </span></a>
-<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="co">#&gt;  version  R version 3.5.1 (2018-07-02)</span></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="co">#&gt;  system   x86_64, darwin15.6.0        </span></a>
-<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="co">#&gt;  ui       X11                         </span></a>
-<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="co">#&gt;  language (EN)                        </span></a>
-<a class="sourceLine" id="cb1-8" data-line-number="8"><span class="co">#&gt;  collate  en_US.UTF-8                 </span></a>
-<a class="sourceLine" id="cb1-9" data-line-number="9"><span class="co">#&gt;  tz       America/New_York            </span></a>
-<a class="sourceLine" id="cb1-10" data-line-number="10"><span class="co">#&gt;  date     2018-09-13</span></a>
-<a class="sourceLine" id="cb1-11" data-line-number="11"><span class="co">#&gt; Packages -----------------------------------------------------------------</span></a>
-<a class="sourceLine" id="cb1-12" data-line-number="12"><span class="co">#&gt;  package    * version    date       source        </span></a>
-<a class="sourceLine" id="cb1-13" data-line-number="13"><span class="co">#&gt;  assertthat   0.2.0      2017-04-11 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-14" data-line-number="14"><span class="co">#&gt;  backports    1.1.2      2017-12-13 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-15" data-line-number="15"><span class="co">#&gt;  base       * 3.5.1      2018-07-05 local         </span></a>
-<a class="sourceLine" id="cb1-16" data-line-number="16"><span class="co">#&gt;  commonmark   1.5        2018-04-28 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-17" data-line-number="17"><span class="co">#&gt;  compiler     3.5.1      2018-07-05 local         </span></a>
-<a class="sourceLine" id="cb1-18" data-line-number="18"><span class="co">#&gt;  crayon       1.3.4      2017-09-16 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-19" data-line-number="19"><span class="co">#&gt;  datasets   * 3.5.1      2018-07-05 local         </span></a>
-<a class="sourceLine" id="cb1-20" data-line-number="20"><span class="co">#&gt;  desc         1.2.0      2018-05-01 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-21" data-line-number="21"><span class="co">#&gt;  devtools     1.13.5     2018-02-18 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-22" data-line-number="22"><span class="co">#&gt;  digest       0.6.15     2018-01-28 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-23" data-line-number="23"><span class="co">#&gt;  evaluate     0.11       2018-07-17 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-24" data-line-number="24"><span class="co">#&gt;  fs           1.2.4      2018-07-26 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-25" data-line-number="25"><span class="co">#&gt;  graphics   * 3.5.1      2018-07-05 local         </span></a>
-<a class="sourceLine" id="cb1-26" data-line-number="26"><span class="co">#&gt;  grDevices  * 3.5.1      2018-07-05 local         </span></a>
-<a class="sourceLine" id="cb1-27" data-line-number="27"><span class="co">#&gt;  htmltools    0.3.6      2017-04-28 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-28" data-line-number="28"><span class="co">#&gt;  knitr        1.20.15    2018-08-29 local         </span></a>
-<a class="sourceLine" id="cb1-29" data-line-number="29"><span class="co">#&gt;  magrittr     1.5        2014-11-22 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-30" data-line-number="30"><span class="co">#&gt;  MASS         7.3-50     2018-04-30 CRAN (R 3.5.1)</span></a>
-<a class="sourceLine" id="cb1-31" data-line-number="31"><span class="co">#&gt;  memoise      1.1.0      2017-04-21 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-32" data-line-number="32"><span class="co">#&gt;  methods    * 3.5.1      2018-07-05 local         </span></a>
-<a class="sourceLine" id="cb1-33" data-line-number="33"><span class="co">#&gt;  pkgdown      1.1.0.9000 2018-09-11 local         </span></a>
-<a class="sourceLine" id="cb1-34" data-line-number="34"><span class="co">#&gt;  R6           2.2.2      2017-06-17 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-35" data-line-number="35"><span class="co">#&gt;  Rcpp         0.12.18    2018-07-23 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-36" data-line-number="36"><span class="co">#&gt;  rlang        0.2.2      2018-08-16 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-37" data-line-number="37"><span class="co">#&gt;  rmarkdown    1.10       2018-06-11 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-38" data-line-number="38"><span class="co">#&gt;  roxygen2     6.0.1      2017-02-06 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-39" data-line-number="39"><span class="co">#&gt;  rprojroot    1.3-2      2018-01-03 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-40" data-line-number="40"><span class="co">#&gt;  rstudioapi   0.7        2017-09-07 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-41" data-line-number="41"><span class="co">#&gt;  stats      * 3.5.1      2018-07-05 local         </span></a>
-<a class="sourceLine" id="cb1-42" data-line-number="42"><span class="co">#&gt;  stringi      1.2.4      2018-07-20 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-43" data-line-number="43"><span class="co">#&gt;  stringr      1.3.1      2018-05-10 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-44" data-line-number="44"><span class="co">#&gt;  tools        3.5.1      2018-07-05 local         </span></a>
-<a class="sourceLine" id="cb1-45" data-line-number="45"><span class="co">#&gt;  utils      * 3.5.1      2018-07-05 local         </span></a>
-<a class="sourceLine" id="cb1-46" data-line-number="46"><span class="co">#&gt;  withr        2.1.2      2018-03-15 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-47" data-line-number="47"><span class="co">#&gt;  xfun         0.3        2018-07-06 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-48" data-line-number="48"><span class="co">#&gt;  xml2         1.2.0      2018-01-24 CRAN (R 3.5.0)</span></a>
-<a class="sourceLine" id="cb1-49" data-line-number="49"><span class="co">#&gt;  yaml         2.2.0      2018-07-25 CRAN (R 3.5.0)</span></a></code></pre></div>
+<details><p><summary>example</summary></p>
+<p>Tests and Coverage</p>
+<p>05 September, 2018 19:23:06</p>
+<p>This output is created by <a href="https://github.com/yonicd/covrpage">covrpage</a>.</p>
+<div id="coverage" class="section level2">
+<h2 class="hasAnchor">
+<a href="#coverage" class="anchor"></a>Coverage</h2>
+<p>Coverage summary is created using the <a href="https://github.com/r-lib/covr">covr</a> package.</p>
+<table class="table table">
+<thead><tr class="header">
+<th align="left">Object</th>
+<th align="center">Coverage (%)</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">covrpage</td>
+<td align="center">21.59</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="../R/badge.R">R/badge.R</a></td>
+<td align="center">0.00</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="../R/coverage_skip.R">R/coverage_skip.R</a></td>
+<td align="center">0.00</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="../R/covrpage_snapshot.R">R/covrpage_snapshot.R</a></td>
+<td align="center">0.00</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="../R/covrpage.R">R/covrpage.R</a></td>
+<td align="center">0.00</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="../R/map_testthat.R">R/map_testthat.R</a></td>
+<td align="center">0.00</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="../R/tencrypt.R">R/tencrypt.R</a></td>
+<td align="center">0.00</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="../R/vignette.R">R/vignette.R</a></td>
+<td align="center">0.00</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="../R/use_covrpage.R">R/use_covrpage.R</a></td>
+<td align="center">63.64</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="../R/covrpage_checks.R">R/covrpage_checks.R</a></td>
+<td align="center">64.29</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="../R/testthat_summary.R">R/testthat_summary.R</a></td>
+<td align="center">69.35</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="../R/create_chunks.R">R/create_chunks.R</a></td>
+<td align="center">96.00</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="unit-tests" class="section level2">
+<h2 class="hasAnchor">
+<a href="#unit-tests" class="anchor"></a>Unit Tests</h2>
+<p>Unit Test summary is created using the <a href="https://github.com/r-lib/testthat">testthat</a> package.</p>
+<table class="table table">
+<thead><tr class="header">
+<th></th>
+<th align="left">file</th>
+<th align="right">n</th>
+<th align="right">time</th>
+<th align="right">error</th>
+<th align="right">failed</th>
+<th align="right">skipped</th>
+<th align="right">warning</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>test-check_utils.R</td>
+<td align="left"><a href="testthat/test-check_utils.R">test-check_utils.R</a></td>
+<td align="right">5</td>
+<td align="right">0.067</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td>test-covrfuns.R</td>
+<td align="left"><a href="testthat/test-covrfuns.R">test-covrfuns.R</a></td>
+<td align="right">6</td>
+<td align="right">0.074</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+<details closed><p><summary> Show Detailed Test Results </summary></p>
+<table class="table table">
+<thead><tr class="header">
+<th align="left">file</th>
+<th align="left">context</th>
+<th align="left">test</th>
+<th align="left">status</th>
+<th align="right">n</th>
+<th align="right">time</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left"><a href="testthat/test-check_utils.R#L4">test-check_utils.R</a></td>
+<td align="left">check for tests</td>
+<td align="left">tests are detected</td>
+<td align="left">PASS</td>
+<td align="right">1</td>
+<td align="right">0.014</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="testthat/test-check_utils.R#L12">test-check_utils.R</a></td>
+<td align="left">check for packages</td>
+<td align="left">packages are detected</td>
+<td align="left">PASS</td>
+<td align="right">3</td>
+<td align="right">0.023</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="testthat/test-check_utils.R#L22">test-check_utils.R</a></td>
+<td align="left">use covrpage</td>
+<td align="left">test use_covrpage</td>
+<td align="left">PASS</td>
+<td align="right">1</td>
+<td align="right">0.030</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="testthat/test-covrfuns.R#L5">test-covrfuns.R</a></td>
+<td align="left">check summary covr</td>
+<td align="left">covr_summary: standard input</td>
+<td align="left">PASS</td>
+<td align="right">1</td>
+<td align="right">0.039</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="testthat/test-covrfuns.R#L9_L11">test-covrfuns.R</a></td>
+<td align="left">check summary covr</td>
+<td align="left">covr_summary: empty input</td>
+<td align="left">PASS</td>
+<td align="right">1</td>
+<td align="right">0.001</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="testthat/test-covrfuns.R#L19">test-covrfuns.R</a></td>
+<td align="left">check summary output types</td>
+<td align="left">with data: short</td>
+<td align="left">PASS</td>
+<td align="right">1</td>
+<td align="right">0.017</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="testthat/test-covrfuns.R#L23">test-covrfuns.R</a></td>
+<td align="left">check summary output types</td>
+<td align="left">with data: long</td>
+<td align="left">PASS</td>
+<td align="right">1</td>
+<td align="right">0.016</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="testthat/test-covrfuns.R#L27">test-covrfuns.R</a></td>
+<td align="left">check summary output types</td>
+<td align="left">with data: no data</td>
+<td align="left">PASS</td>
+<td align="right">1</td>
+<td align="right">0.000</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="testthat/test-covrfuns.R#L35">test-covrfuns.R</a></td>
+<td align="left">check covr to df</td>
+<td align="left">covr object to df: empty input</td>
+<td align="left">PASS</td>
+<td align="right">1</td>
+<td align="right">0.001</td>
+</tr>
+</tbody>
+</table></details><details><p><summary> Session Info </summary></p>
+<table class="table table">
+<thead><tr class="header">
+<th align="left">Field</th>
+<th align="left">Value</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">Version</td>
+<td align="left">R version 3.5.1 (2018-07-02)</td>
+</tr>
+<tr class="even">
+<td align="left">Platform</td>
+<td align="left">x86_64-apple-darwin15.6.0 (64-bit)</td>
+</tr>
+<tr class="odd">
+<td align="left">Running</td>
+<td align="left">macOS High Sierra 10.13.5</td>
+</tr>
+<tr class="even">
+<td align="left">Language</td>
+<td align="left">en_US</td>
+</tr>
+<tr class="odd">
+<td align="left">Timezone</td>
+<td align="left">America/New_York</td>
+</tr>
+</tbody>
+</table>
+<table class="table table">
+<thead><tr class="header">
+<th align="left">Package</th>
+<th align="left">Version</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">testthat</td>
+<td align="left">2.0.0</td>
+</tr>
+<tr class="even">
+<td align="left">covr</td>
+<td align="left">3.1.0</td>
+</tr>
+<tr class="odd">
+<td align="left">covrpage</td>
+<td align="left">0.0.54</td>
+</tr>
+</tbody>
+</table></details><!--- Final Status : pass ---><p><br></p>
+</div>
+<div id="aaa" class="section level2">
+<h2 class="hasAnchor">
+<a href="#aaa" class="anchor"></a>aaa</h2>
+<p>Healthy R packages use <a href="https://github.com/r-lib/testthat">testthat</a> and <a href="https://github.com/r-lib/covr">covr</a> to develop stable packages.</p>
+<p>This package extends the information that is communicated with the potential user with a cover page for the tests in the form of summary tables of results from covr and testthat.</p>
+<p>The output is created in the <a href="tests" class="uri">tests</a> subdirectory as a <a href="tests/README.html">README.md</a> file so it will show up in Github browser page.</p>
+</div>
+<div id="examples-of-active-use-of-covrpage-in-other-repositories" class="section level2">
+<h2 class="hasAnchor">
+<a href="#examples-of-active-use-of-covrpage-in-other-repositories" class="anchor"></a>Examples of active use of {covrpage} in other repositories</h2>
+<ul>
+<li><a href="https://github.com/hrbrmstr/slackr/tree/master/tests">{slackr}</a></li>
+<li><a href="https://github.com/thinkr-open/remedy/tree/master/tests">{remedy}</a></li>
+<li><a href="https://github.com/jonocarroll/mathpix/tree/master/tests">{mathpix}</a></li>
+<li><a href="https://github.com/yonicd/carbonate/tree/master/tests">{carbonate}</a></li>
+</ul>
+</div>
+<div id="package-installation" class="section level2">
+<h2 class="hasAnchor">
+<a href="#package-installation" class="anchor"></a>Package Installation</h2>
+<pre><code><a href="http://www.rdocumentation.org/packages/remotes/topics/install_github"># install.packages('remotes')
+
+remotes::install_github('yonicd/covrpage')</a></code></pre>
+</div>
+<div id="usage" class="section level2">
+<h2 class="hasAnchor">
+<a href="#usage" class="anchor"></a>Usage</h2>
+<pre><code><a href="http://www.rdocumentation.org/packages/covrpage/topics/covrpage"># assuming you are in your package root directory
+
+covrpage::covrpage()
+
+# create the covrpage and send directly to remote repository
+
+covrpage::covrpage(auto_push = TRUE)
+
+# Copy output as a vignette to use in pkgdown
+
+covrpage::covrpage_snapshot(vignette = TRUE)
+
+# assuming you are not in your package directory
+
+covrpage::covrpage('another_directory')
+
+# peek at an R package on a Github Repository
+
+covrpage::covrpage_snapshot(repo = 'user/repo')</a></code></pre>
+</div>
+<div id="articles" class="section level2">
+<h2 class="hasAnchor">
+<a href="#articles" class="anchor"></a>Articles</h2>
+<ul>
+<li><a href="https://yonicd.github.io/covrpage/articles/Test_Results.html">Test Results</a></li>
+<li><a href="https://yonicd.github.io/covrpage/articles/Continuous_Integration.html">Continuous Integration</a></li>
+</ul>
+<p>That’s it!</p>
+<p>Any questions/comments are always welcome in the <a href="https://github.com/yonicd/covrpage/issues">issues</a> section.</p>
+</div>
 </details>
 </div>
   </div>

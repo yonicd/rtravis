@@ -40,7 +40,7 @@ package.
 
 |              | file                                 | n |  time | error | failed | skipped | warning |
 | ------------ | :----------------------------------- | -: | ----: | ----: | -----: | ------: | ------: |
-| test\_func.R | [test\_func.R](https://github.com/yonicd/rtravis/tree/master/tests/testthat/test_func.R) | 1 | 0.023 |     0 |      0 |       0 |       0 |
+| test\_func.R | [test\_func.R](https://github.com/yonicd/rtravis/tree/master/tests/testthat/test_func.R) | 1 | 0.004 |     0 |      0 |       0 |       0 |
 
 <details closed>
 
@@ -49,7 +49,7 @@ package.
 
 | file                                     | context | test   | status | n |  time |
 | :--------------------------------------- | :------ | :----- | :----- | -: | ----: |
-| [test\_func.R](https://github.com/yonicd/rtravis/tree/master/tests/testthat/test_func.R#L12) | test    | a test | PASS   | 1 | 0.023 |
+| [test\_func.R](https://github.com/yonicd/rtravis/tree/master/tests/testthat/test_func.R#L12) | test    | a test | PASS   | 1 | 0.004 |
 
 </details>
 

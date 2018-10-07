@@ -312,64 +312,7 @@
 <td align="left">0.0.54</td>
 </tr>
 </tbody>
-</table></details><!--- Final Status : pass ---><p><br></p>
-</div>
-<div id="aaa" class="section level2">
-<h2 class="hasAnchor">
-<a href="#aaa" class="anchor"></a>aaa</h2>
-<p>Healthy R packages use <a href="https://github.com/r-lib/testthat">testthat</a> and <a href="https://github.com/r-lib/covr">covr</a> to develop stable packages.</p>
-<p>This package extends the information that is communicated with the potential user with a cover page for the tests in the form of summary tables of results from covr and testthat.</p>
-<p>The output is created in the <a href="tests" class="uri">tests</a> subdirectory as a <a href="tests/README.html">README.md</a> file so it will show up in Github browser page.</p>
-</div>
-<div id="examples-of-active-use-of-covrpage-in-other-repositories" class="section level2">
-<h2 class="hasAnchor">
-<a href="#examples-of-active-use-of-covrpage-in-other-repositories" class="anchor"></a>Examples of active use of {covrpage} in other repositories</h2>
-<ul>
-<li><a href="https://github.com/hrbrmstr/slackr/tree/master/tests">{slackr}</a></li>
-<li><a href="https://github.com/thinkr-open/remedy/tree/master/tests">{remedy}</a></li>
-<li><a href="https://github.com/jonocarroll/mathpix/tree/master/tests">{mathpix}</a></li>
-<li><a href="https://github.com/yonicd/carbonate/tree/master/tests">{carbonate}</a></li>
-</ul>
-</div>
-<div id="package-installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#package-installation" class="anchor"></a>Package Installation</h2>
-<pre><code><a href="http://www.rdocumentation.org/packages/remotes/topics/install_github"># install.packages('remotes')
-
-remotes::install_github('yonicd/covrpage')</a></code></pre>
-</div>
-<div id="usage" class="section level2">
-<h2 class="hasAnchor">
-<a href="#usage" class="anchor"></a>Usage</h2>
-<pre><code><a href="http://www.rdocumentation.org/packages/covrpage/topics/covrpage"># assuming you are in your package root directory
-
-covrpage::covrpage()
-
-# create the covrpage and send directly to remote repository
-
-covrpage::covrpage(auto_push = TRUE)
-
-# Copy output as a vignette to use in pkgdown
-
-covrpage::covrpage_snapshot(vignette = TRUE)
-
-# assuming you are not in your package directory
-
-covrpage::covrpage('another_directory')
-
-# peek at an R package on a Github Repository
-
-covrpage::covrpage_snapshot(repo = 'user/repo')</a></code></pre>
-</div>
-<div id="articles" class="section level2">
-<h2 class="hasAnchor">
-<a href="#articles" class="anchor"></a>Articles</h2>
-<ul>
-<li><a href="https://yonicd.github.io/covrpage/articles/Test_Results.html">Test Results</a></li>
-<li><a href="https://yonicd.github.io/covrpage/articles/Continuous_Integration.html">Continuous Integration</a></li>
-</ul>
-<p>That’s it!</p>
-<p>Any questions/comments are always welcome in the <a href="https://github.com/yonicd/covrpage/issues">issues</a> section.</p>
+</table></details><!--- Final Status : pass --->
 </div>
 </details>
 </div>

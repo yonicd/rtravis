@@ -5,11 +5,11 @@
 
 <details>
 
-<summary>example</summary>
+<summary> md tables for home page of site </summary>
 
-Tests and Coverage
+# Tests and Coverage
 
-05 September, 2018 19:23:06
+07 October, 2018 08:27:06
 
 This output is created by
 [covrpage](https://github.com/yonicd/covrpage).
@@ -19,20 +19,10 @@ This output is created by
 Coverage summary is created using the
 [covr](https://github.com/r-lib/covr) package.
 
-| Object                                             | Coverage (%) |
-| :------------------------------------------------- | :----------: |
-| covrpage                                           |    21.59     |
-| [R/badge.R](../R/badge.R)                          |     0.00     |
-| [R/coverage\_skip.R](../R/coverage_skip.R)         |     0.00     |
-| [R/covrpage\_snapshot.R](../R/covrpage_snapshot.R) |     0.00     |
-| [R/covrpage.R](../R/covrpage.R)                    |     0.00     |
-| [R/map\_testthat.R](../R/map_testthat.R)           |     0.00     |
-| [R/tencrypt.R](../R/tencrypt.R)                    |     0.00     |
-| [R/vignette.R](../R/vignette.R)                    |     0.00     |
-| [R/use\_covrpage.R](../R/use_covrpage.R)           |    63.64     |
-| [R/covrpage\_checks.R](../R/covrpage_checks.R)     |    64.29     |
-| [R/testthat\_summary.R](../R/testthat_summary.R)   |    69.35     |
-| [R/create\_chunks.R](../R/create_chunks.R)         |    96.00     |
+| Object                | Coverage (%) |
+| :-------------------- | :----------: |
+| rtravis               |      0       |
+| [R/fun.R](../R/fun.R) |      0       |
 
 <br>
 
@@ -42,27 +32,18 @@ Unit Test summary is created using the
 [testthat](https://github.com/r-lib/testthat)
 package.
 
-|                     | file                                               | n |  time | error | failed | skipped | warning |
-| ------------------- | :------------------------------------------------- | -: | ----: | ----: | -----: | ------: | ------: |
-| test-check\_utils.R | [test-check\_utils.R](testthat/test-check_utils.R) | 5 | 0.067 |     0 |      0 |       0 |       0 |
-| test-covrfuns.R     | [test-covrfuns.R](testthat/test-covrfuns.R)        | 6 | 0.074 |     0 |      0 |       0 |       0 |
+|              | file                                 | n |  time | error | failed | skipped | warning |
+| ------------ | :----------------------------------- | -: | ----: | ----: | -----: | ------: | ------: |
+| test\_func.R | [test\_func.R](testthat/test_func.R) | 1 | 0.004 |     0 |      0 |       0 |       0 |
 
 <details closed>
 
 <summary> Show Detailed Test Results
 </summary>
 
-| file                                                   | context                    | test                           | status | n |  time |
-| :----------------------------------------------------- | :------------------------- | :----------------------------- | :----- | -: | ----: |
-| [test-check\_utils.R](testthat/test-check_utils.R#L4)  | check for tests            | tests are detected             | PASS   | 1 | 0.014 |
-| [test-check\_utils.R](testthat/test-check_utils.R#L12) | check for packages         | packages are detected          | PASS   | 3 | 0.023 |
-| [test-check\_utils.R](testthat/test-check_utils.R#L22) | use covrpage               | test use\_covrpage             | PASS   | 1 | 0.030 |
-| [test-covrfuns.R](testthat/test-covrfuns.R#L5)         | check summary covr         | covr\_summary: standard input  | PASS   | 1 | 0.039 |
-| [test-covrfuns.R](testthat/test-covrfuns.R#L9_L11)     | check summary covr         | covr\_summary: empty input     | PASS   | 1 | 0.001 |
-| [test-covrfuns.R](testthat/test-covrfuns.R#L19)        | check summary output types | with data: short               | PASS   | 1 | 0.017 |
-| [test-covrfuns.R](testthat/test-covrfuns.R#L23)        | check summary output types | with data: long                | PASS   | 1 | 0.016 |
-| [test-covrfuns.R](testthat/test-covrfuns.R#L27)        | check summary output types | with data: no data             | PASS   | 1 | 0.000 |
-| [test-covrfuns.R](testthat/test-covrfuns.R#L35)        | check covr to df           | covr object to df: empty input | PASS   | 1 | 0.001 |
+| file                                     | context | test   | status | n |  time |
+| :--------------------------------------- | :------ | :----- | :----- | -: | ----: |
+| [test\_func.R](testthat/test_func.R#L12) | test    | a test | PASS   | 1 | 0.004 |
 
 </details>
 
@@ -74,78 +55,18 @@ package.
 | :------- | :---------------------------------- |
 | Version  | R version 3.5.1 (2018-07-02)        |
 | Platform | x86\_64-apple-darwin15.6.0 (64-bit) |
-| Running  | macOS High Sierra 10.13.5           |
+| Running  | macOS High Sierra 10.13.6           |
 | Language | en\_US                              |
 | Timezone | America/New\_York                   |
 
-| Package  | Version |
-| :------- | :------ |
-| testthat | 2.0.0   |
-| covr     | 3.1.0   |
-| covrpage | 0.0.54  |
+| Package  | Version    |
+| :------- | :--------- |
+| testthat | 2.0.0.9000 |
+| covr     | 3.2.0      |
+| covrpage | 0.0.58     |
 
 </details>
 
 <!--- Final Status : pass --->
 
 </details>
-
-<br>
-
-Healthy R packages use [testthat](https://github.com/r-lib/testthat) and
-[covr](https://github.com/r-lib/covr) to develop stable packages.
-
-This package extends the information that is communicated with the
-potential user with a cover page for the tests in the form of summary
-tables of results from covr and testthat.
-
-The output is created in the [tests](tests) subdirectory as a
-[README.md](tests/README.md) file so it will show up in Github browser
-page.
-
-## Examples of active use of {covrpage} in other repositories
-
-  - [{slackr}](https://github.com/hrbrmstr/slackr/tree/master/tests)
-  - [{remedy}](https://github.com/thinkr-open/remedy/tree/master/tests)
-  - [{mathpix}](https://github.com/jonocarroll/mathpix/tree/master/tests)
-  - [{carbonate}](https://github.com/yonicd/carbonate/tree/master/tests)
-
-## Package Installation
-
-    # install.packages('remotes')
-    
-    remotes::install_github('yonicd/covrpage')
-
-## Usage
-
-    # assuming you are in your package root directory
-    
-    covrpage::covrpage()
-    
-    # create the covrpage and send directly to remote repository
-    
-    covrpage::covrpage(auto_push = TRUE)
-    
-    # Copy output as a vignette to use in pkgdown
-    
-    covrpage::covrpage_snapshot(vignette = TRUE)
-    
-    # assuming you are not in your package directory
-    
-    covrpage::covrpage('another_directory')
-    
-    # peek at an R package on a Github Repository
-    
-    covrpage::covrpage_snapshot(repo = 'user/repo')
-
-## Articles
-
-  - [Test
-    Results](https://yonicd.github.io/covrpage/articles/Test_Results.html)
-  - [Continuous
-    Integration](https://yonicd.github.io/covrpage/articles/Continuous_Integration.html)
-
-That’s it\!
-
-Any questions/comments are always welcome in the
-[issues](https://github.com/yonicd/covrpage/issues) section.
